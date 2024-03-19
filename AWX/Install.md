@@ -17,4 +17,4 @@ Modif
     n
     p
     w
-    ![alt text](https://github.com/ABEST-59/SysOps/blob/main/AWX/image1.png)
+    ![alt text](https://github.com/ABEST-59/SysOps/blob/main/AWX/image1.png?raw=true)
