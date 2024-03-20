@@ -1,0 +1,1 @@
+AWX fournit une interface utilisateur Web, une API REST et un moteur de tâches construit sur Ansible. Il s'agit de l'un des projets en amont de Red Hat Ansible Automation Platform.
