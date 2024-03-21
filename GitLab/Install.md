@@ -8,7 +8,7 @@
     Sites:
         - https://packages.gitlab.com/gitlab/gitlab-ce
         - 
-Modif
+Modif:
     nano /etc/hostname
     nano /etc/hosts
     nano /etc/network/interfaces
