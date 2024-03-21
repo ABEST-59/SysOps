@@ -1,12 +1,15 @@
     OS:     DEBIAN 12
-            plwapt1
-            10.72.99.250
+            plwapt1     10.72.99.250
+            plwapt2     10.72.99.249
+            plwapt3     10.72.99.248
             4   vcpu
             4GB ram
             dns ajout : plwapt1.ad-cimut.priv
+                        plwapt2.ad-cimut.priv
+                        plwapt3.ad-cimut.priv
 
     Sites:
-        - https://packages.gitlab.com/gitlab/gitlab-ce
+        - https://www.wapt.fr/
         - 
 Modif
     nano /etc/hostname
@@ -24,13 +27,17 @@ Modif
 	echo -e '\n[nss]\nhomedir_substring= /home' >> /etc/sssd/sssd.conf
 	systemctl restart sssd 
 
+Register sur le plwapt1
+    sudo wapt-get register
+    sudo wapt-get restart-waptservice
+
     sudo apt install locales-all -y
     sudo localectl set-locale LANG=fr_FR.UTF-8
     sudo localectl status
 
     sudo timedatectl status
 
-    sudo apt update && apt upgrade
+    sudo apt update && apt upgrade -y
     sudo apt install ca-certificates -y
 
     Suivre la doc : https://www.wapt.fr/fr/doc/
