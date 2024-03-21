@@ -1,9 +1,9 @@
     OS:     DEBIAN 12
-            plgitlab2
-            10.72.99.252
+            plwapt1
+            10.72.99.250
             4   vcpu
             4GB ram
-            dns ajout : plgitlab2.ad-cimut.priv
+            dns ajout : plwapt1.ad-cimut.priv
 
     Sites:
         - https://packages.gitlab.com/gitlab/gitlab-ce
@@ -24,17 +24,13 @@ Modif
 	echo -e '\n[nss]\nhomedir_substring= /home' >> /etc/sssd/sssd.conf
 	systemctl restart sssd 
 
-Register WAPT
-    sudo wapt-get register
-    sudo wapt-get restart-waptservice
+    sudo apt install locales-all -y
+    sudo localectl set-locale LANG=fr_FR.UTF-8
+    sudo localectl status
 
-    sudo apt-get install wget perl -y
-    cd /tmp/
-    wget https://packages.gitlab.com/gitlab/gitlab-ce/packages/debian/bookworm/gitlab-ce_16.7.7-ce.0_amd64.deb
+    sudo timedatectl status
 
-    sudo dpkg -i gitlab-ce_16.7.7-ce.0_amd64.deb
-    Modif:
-    nano /etc/gitlab/gitlab.rb
-    external_url 'lpgitlab1.ad-cimut.priv'
+    sudo apt update && apt upgrade
+    sudo apt install ca-certificates -y
 
-    Reset mdp root : gitlab-rake "gitlab:password:reset"
+    Suivre la doc : https://www.wapt.fr/fr/doc/

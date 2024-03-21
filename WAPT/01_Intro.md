@@ -1,0 +1,2 @@
+WAPT4 est un logiciel de déploiement, de mise à jour et de suppression automatisé des paquetages pour Windows, Linux et macOS.
+Il peut être utilisé pour installer des paquetages logiciels tels que des programmes d'installation, les mises à jour Windows, des Services Packs, des hotfix depuis un serveur central WAPT ou serveur web répliqué.
