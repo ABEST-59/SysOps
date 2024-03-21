@@ -18,9 +18,9 @@
     	sudo realm permit -g gl_infra
     	echo "session optional        pam_mkhomedir.so skel=/etc/skel umask=077" >> /etc/pam.d/common-session
     	echo "%gl_infra ALL = (ALL) ALL" >> /etc/sudoers.d/ad-cimut
-   	sed -i.bak -e "s/use_fully_qualified_names = True/use_fully_qualified_names = False/" /etc/sssd/sssd.conf
-	sed -i.bak -e "s/fallback_homedir = \/home\/%u@%d/override_homedir = \/home\/%u/" /etc/sssd/sssd.conf
-	echo -e '\n[nss]\nhomedir_substring= /home' >> /etc/sssd/sssd.conf
+     	sed -i.bak -e "s/use_fully_qualified_names = True/use_fully_qualified_names = False/" /etc/sssd/sssd.conf
+      	sed -i.bak -e "s/fallback_homedir = \/home\/%u@%d/override_homedir = \/home\/%u/" /etc/sssd/sssd.conf
+       	echo -e '\n[nss]\nhomedir_substring= /home' >> /etc/sssd/sssd.conf
 	systemctl restart sssd 
 
 Register WAPT
