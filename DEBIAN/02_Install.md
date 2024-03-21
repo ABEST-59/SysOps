@@ -1,21 +1,19 @@
-  OS      Debian 12
-  IP      10.72.99.253
-  CPU     2vCPU
-  RAM     2G
-  DISK    50G
-  LVM     
-    PV         VG     Fmt  Attr PSize   PFree
-    /dev/sda5  VG_DEB lvm2 a--  <49,52g 21,58g
-
-    VG     #PV #LV #SN Attr   VSize   VFree
-    VG_DEB   1   5   0 wz--n- <49,52g 21,58g
-
-    LV   VG     Attr       LSize  Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
-    home VG_DEB -wi-ao---- <4,66g
-    root VG_DEB -wi-ao----  9,31g
-    swap VG_DEB -wi-ao---- <4,66g
-    tmp  VG_DEB -wi-ao---- <4,66g
-    var  VG_DEB -wi-ao---- <4,66g
+    OS      Debian 12
+    IP      10.72.99.253
+    CPU     2vCPU
+    RAM     2G
+    DISK    50G
+    LVM     
+      PV         VG     Fmt  Attr PSize   PFree
+      /dev/sda5  VG_DEB lvm2 a--  <49,52g 21,58g
+      VG     #PV #LV #SN Attr   VSize   VFree
+      VG_DEB   1   5   0 wz--n- <49,52g 21,58g
+      LV   VG     Attr       LSize  Pool Origin Data%  Meta%  Move Log Cpy%Sync Convert
+      home VG_DEB -wi-ao---- <4,66g
+      root VG_DEB -wi-ao----  9,31g
+      swap VG_DEB -wi-ao---- <4,66g
+      tmp  VG_DEB -wi-ao---- <4,66g
+      var  VG_DEB -wi-ao---- <4,66g
 
    Modif:
     Install:
